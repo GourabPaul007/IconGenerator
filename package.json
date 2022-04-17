@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "makeIcon":"electron-icon-maker --input=C:/Projects/IconMaker/images/KalmIcon2.png --output=./icons && node .\\index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "icon-gen": "^2.1.0"
-  },
   "devDependencies": {
     "electron-icon-maker": "^0.0.5"
   }
