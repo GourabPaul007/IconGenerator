@@ -5,7 +5,7 @@ const directory = __dirname + "\\icons\\icons\\png\\";
 
 getCurrentFilenames();
 function getCurrentFilenames() {
-  console.log("Current filenames:");
+  imagesPrename = process.argv[2] ?? "iconName";
   fs.readdirSync(directory).forEach((oldFileName) => {
     let newFileName;
     if (oldFileName.includes(imagesPrename)) {
