@@ -1,16 +1,14 @@
 const fs = require("fs");
 
-// const __dirname = "C:\\Projects\\IconMaker\\";
-let imagesPrename = "kalm";
+let imagesPrename = "iconName";
 const directory = __dirname + "\\icons\\icons\\png\\";
 
-// List all the filenames before renaming
 getCurrentFilenames();
 function getCurrentFilenames() {
   console.log("Current filenames:");
   fs.readdirSync(directory).forEach((oldFileName) => {
     let newFileName;
-    if (oldFileName.includes("kalm")) {
+    if (oldFileName.includes(imagesPrename)) {
       newFileName = oldFileName;
     } else {
       newFileName =
